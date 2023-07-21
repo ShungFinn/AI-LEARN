@@ -194,6 +194,28 @@ $ git clone <SSH_url or http_url>
 
 
 
+### some problem that i met:
+
+##### 1.if u wanna to push u must pull first !!!!
+
+##### 2.the push process must be :
+
+```
+$ git pull <repo-name>
+$ git add -A
+$ git commit -m "<words>" //(this part must change!!!)
+$ git push <repo-name> <branch>
+```
+
+##### 3.if the branch name don't fit ,it can't push:
+
+```
+//u need to change the branch name
+$ git branch -m <new_branch_name>
+```
+
+
+
 # HAVE FUN!!!
 
 # ***<u>By :ShungFinn</u>***
