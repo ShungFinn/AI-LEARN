@@ -110,13 +110,13 @@
     $ cd ..
     // if u wanna delete 
     $ rm <a content>
-    $ rm -m <a folder(need to quit the folder frist)>
+    $ rm -r <a folder(need to quit the folder frist)>
 
 // git commands:
     // and we need to set up something while frist usage:
         // to tell git who u are and your email (just tell it, it won't apply for anything but a text):
-        $ gitconfig --global user.name "<name>"
-        $ gitconfig --global user.email "<email>"
+        $ git config --global user.name "<name>"
+        $ git config --global user.email "<email>"
         // and initialize the folder:
         $ git init
 ```
@@ -207,7 +207,7 @@ $ git clone <SSH_url or http_url>
 ##### 2.the push process must be :
 
 ```
-$ git pull <repo-name>
+$ git pull <repo-name> <branch>
 $ git add -A
 $ git commit -m "<words>" //(this part must change!!!)
 $ git push <repo-name> <branch>
@@ -218,6 +218,12 @@ $ git push <repo-name> <branch>
 ```
 //u need to change the branch name
 $ git branch -m <new_branch_name>
+```
+
+##### 4.if u wanna edit a repo , u should first clone it in your local
+
+```
+$ git clone <URL>
 ```
 
 
